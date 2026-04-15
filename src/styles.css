@@ -1,0 +1,198 @@
+@import "tailwindcss";
+
+@theme {
+  /* ===== BANANA3D DESIGN TOKENS — DARK MODE ===== */
+
+  /* Primary: Amarelo Banana */
+  --color-banana: #F5C518;
+  --color-banana-light: #FDE68A;
+  --color-banana-dark: #D4A017;
+
+  /* Secondary: Preto profundo */
+  --color-deep-black: #0A0A14;
+  --color-deep-black-light: #111127;
+
+  /* Accent: Vermelho coral */
+  --color-coral: #E94560;
+  --color-coral-dark: #C73E54;
+
+  /* Surfaces — Dark Mode */
+  --color-surface: #0F0F1A;
+  --color-surface-alt: #161625;
+  --color-surface-card: #1A1A2E;
+  --color-surface-card-hover: #22223A;
+  --color-surface-input: #1E1E32;
+
+  /* Text — Dark Mode */
+  --color-text-primary: #F0F0F5;
+  --color-text-secondary: #C8C8D4;
+  --color-text-muted: #8888A0;
+  --color-text-light: #F8F9FA;
+
+  /* Borders */
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-border-hover: rgba(255, 255, 255, 0.15);
+
+  /* Typography */
+  --font-display: 'Rubik', sans-serif;
+  --font-body: 'Nunito Sans', sans-serif;
+
+  /* Spacing rhythm */
+  --spacing-section: 6rem;
+  --spacing-section-mobile: 3.5rem;
+
+  /* Borders */
+  --radius-card: 1rem;
+  --radius-button: 0.625rem;
+
+  /* Shadows — Dark Mode (subtle glow instead of dark shadow) */
+  --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.3);
+  --shadow-card-hover: 0 12px 40px rgba(0, 0, 0, 0.5);
+  --shadow-navbar: 0 4px 30px rgba(0, 0, 0, 0.4);
+  --shadow-glow-banana: 0 0 30px rgba(245, 197, 24, 0.15);
+
+  /* Animations */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --duration-fast: 150ms;
+  --duration-normal: 250ms;
+  --duration-slow: 400ms;
+}
+
+/* ===== BASE STYLES ===== */
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-body);
+  color: var(--color-text-primary);
+  background-color: var(--color-surface);
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background-color: var(--color-surface);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  line-height: 1.15;
+  color: var(--color-text-primary);
+}
+
+p {
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+}
+
+/* ===== SCROLL REVEAL ANIMATION ===== */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity var(--duration-slow) var(--ease-out-expo),
+              transform var(--duration-slow) var(--ease-out-expo);
+}
+
+.reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== SECTION STYLES ===== */
+section {
+  scroll-margin-top: 5rem;
+}
+
+/* ===== GLASSMORPHISM UTILITY — DARK ===== */
+.glass {
+  background: rgba(15, 15, 26, 0.8);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* ===== BUTTON BASE ===== */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.75rem;
+  border-radius: var(--radius-button);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.95rem;
+  background-color: var(--color-banana);
+  color: var(--color-deep-black);
+  border: none;
+  cursor: pointer;
+  transition: all var(--duration-normal) var(--ease-out-expo);
+  text-decoration: none;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-banana-light);
+  box-shadow: var(--shadow-glow-banana);
+  transform: translateY(-2px);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.75rem;
+  border-radius: var(--radius-button);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.95rem;
+  background-color: transparent;
+  color: var(--color-banana);
+  border: 2px solid var(--color-banana);
+  cursor: pointer;
+  transition: all var(--duration-normal) var(--ease-out-expo);
+  text-decoration: none;
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-banana);
+  color: var(--color-deep-black);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-glow-banana);
+}
+
+/* ===== SCROLLBAR — DARK ===== */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-surface);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* ===== PREFERS REDUCED MOTION ===== */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}
