@@ -158,9 +158,9 @@ export class AboutComponent implements OnInit, OnDestroy {
    */
   teamMembers = signal<TeamMember[]>([
     { id: '1', name: 'Alisson Pokrywiecki', role: 'Desenvolvedor', avatarUrl: '', quote: 'Essa miniatura é sua ou é impressão minha?' },
-    { id: '2', name: 'Alice Martins', role: 'Pintora & Social media', avatarUrl: '', quote: 'Soooomebody once told me the world...' },
+    { id: '2', name: 'Alice Traple', role: 'Pintora & Social media', avatarUrl: '', quote: 'Soooomebody once told me the world...' },
     { id: '3', name: 'Vinícius Setti', role: 'Especialista Técnico', avatarUrl: '', quote: 'Eu comprei a impressora, logo, meu jeito.' },
-    { id: '4', name: 'Natália Will', role: 'Social Media', avatarUrl: '', quote: 'Jimin, Jungkook, V, Suga, Rapmonster, BTS.' },
+    { id: '4', name: 'Natália Will', role: 'Social Media', avatarUrl: '', quote: 'I walk through the valley of the shadow of death...' },
     { id: '5', name: 'Rodrigo Faistauer', role: 'Pintor', avatarUrl: '', quote: 'Cuidado com a mistura de miniaturas e cleptomaníacos...' },
     { id: '6', name: 'Miguel Angel', role: 'Pintor', avatarUrl: '', quote: 'Sleeptoken, Corinthians, basquete e coisarada.' },
     { id: '7', name: 'Thomaz Bianchini', role: 'Pintor', avatarUrl: '', quote: 'TUTUTUTU... MAX VERSTAPPEN, TUTUTUTU...' },
