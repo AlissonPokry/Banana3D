@@ -4,4 +4,5 @@ export interface TeamMember {
   role: string;
   avatarUrl: string;
   quote: string;
+  bio: string;
 }

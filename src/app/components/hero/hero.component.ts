@@ -26,10 +26,6 @@ import { isPlatformBrowser } from '@angular/common';
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <!-- Text Content -->
           <div class="reveal" [class.revealed]="revealed()">
-            <span class="inline-block px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-6"
-                  style="background: rgba(245,197,24,0.15); color: var(--color-banana);">
-              Alta qualidade
-            </span>
             <h1 class="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-black leading-tight mb-6"
                 style="font-family: var(--font-display); color: var(--color-text-light);">
               Impressão 3D com
@@ -42,20 +38,33 @@ import { isPlatformBrowser } from '@angular/common';
             </h1>
             <p class="text-lg sm:text-xl mb-10 max-w-lg leading-relaxed"
                style="color: rgba(248,249,250,0.7);">
-              Transformamos suas ideias em realidade com impressoras de resina de resolução 8K.
-              Miniaturas, protótipos, peças customizadas e mais!
+              Transformamos suas ideias em realidade! Miniaturas, protótipos, peças customizadas e mais!
             </p>
 
             <!-- CTA Buttons -->
-            <div class="flex flex-wrap gap-4 mb-12">
-              <a href="#portfolio" class="btn-primary text-base" (click)="scrollTo($event, 'portfolio')">
-                Ver Portfólio
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                  <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+            <div class="flex flex-col sm:inline-flex sm:flex-col gap-4 mb-12">
+              <div class="flex flex-col sm:flex-row gap-4">
+                <a href="#portfolio" class="btn-primary text-base w-full sm:w-auto text-center justify-center" (click)="scrollTo($event, 'portfolio')">
+                  Ver Portfólio
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                  </svg>
+                </a>
+                <a href="#contato" class="btn-secondary text-base w-full sm:w-auto text-center justify-center" (click)="scrollTo($event, 'contato')">
+                  Fale Conosco
+                </a>
+              </div>
+              <a href="#"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 class="btn-primary text-base w-full text-center justify-center"
+                 aria-label="Acessar a Loja Banana3D">
+                Acessar Loja
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+                  <line x1="3" y1="6" x2="21" y2="6"/>
+                  <path d="M16 10a4 4 0 0 1-8 0"/>
                 </svg>
-              </a>
-              <a href="#contato" class="btn-secondary text-base" (click)="scrollTo($event, 'contato')">
-                Fale Conosco
               </a>
             </div>
 
@@ -94,7 +103,7 @@ import { isPlatformBrowser } from '@angular/common';
                  style="aspect-ratio: 4/3;">
               <img
                 src="https://images.unsplash.com/photo-1636108783889-b tried?w=800&q=80"
-                alt="Impressora 3D de resina criando peça detalhada com resolução 8K"
+                alt="Impressora 3D de resina criando peça detalhada com resolução 9K"
                 class="w-full h-full object-cover"
                 loading="eager"
                 onerror="this.style.background='linear-gradient(135deg, #1a1a2e, #16213e)'; this.style.minHeight='300px'; this.alt='Imagem da impressora 3D'"
@@ -105,7 +114,7 @@ import { isPlatformBrowser } from '@angular/common';
             <!-- Floating badge -->
             <div class="absolute -bottom-4 -left-4 px-5 py-3 rounded-2xl shadow-lg"
                  style="background: var(--color-banana); color: var(--color-deep-black);">
-              <span class="font-display font-bold text-sm">Resolução 8K</span>
+              <span class="font-display font-bold text-sm">Resolução 9K</span>
             </div>
             <!-- Floating stats -->
             <div class="absolute -top-4 -right-4 px-5 py-3 rounded-2xl glass shadow-lg">

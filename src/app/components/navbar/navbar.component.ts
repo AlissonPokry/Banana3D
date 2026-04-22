@@ -67,16 +67,16 @@ import { NgClass } from '@angular/common';
           aria-controls="mobile-menu"
         >
           <span
-            class="block w-6 h-0.5 bg-deep-black transition-all origin-center"
+            class="block w-6 h-0.5 bg-white transition-all origin-center"
             [class.rotate-45]="mobileOpen()"
             [class.translate-y-2]="mobileOpen()"
           ></span>
           <span
-            class="block w-6 h-0.5 bg-deep-black transition-all"
+            class="block w-6 h-0.5 bg-white transition-all"
             [class.opacity-0]="mobileOpen()"
           ></span>
           <span
-            class="block w-6 h-0.5 bg-deep-black transition-all origin-center"
+            class="block w-6 h-0.5 bg-white transition-all origin-center"
             [class.-rotate-45]="mobileOpen()"
             [class.-translate-y-2]="mobileOpen()"
           ></span>

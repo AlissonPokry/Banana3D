@@ -25,7 +25,7 @@ import { PortfolioItem } from '../../models/portfolio-item';
           </h2>
           <p class="text-lg max-w-2xl mx-auto"
              style="color: var(--color-text-muted);">
-            Cada peça é impressa com resina de resolução 8K, garantindo detalhes que surpreendem. Confira alguns dos nossos trabalhos.
+            Cada peça é impressa com resina de resolução 9K, garantindo detalhes que surpreendem. Confira alguns dos nossos trabalhos.
           </p>
         </div>
 
@@ -76,7 +76,7 @@ export class PortfolioComponent implements OnInit, OnDestroy {
     {
       id: '1',
       title: 'Miniatura Dragão Medieval',
-      description: 'Miniatura de RPG com detalhes ultra-finos impressa em resina 8K. Escamas, garras e asas com textura realista.',
+      description: 'Miniatura de RPG com detalhes ultra-finos impressa em resina 9K. Escamas, garras e asas com textura realista.',
       imageUrl: 'https://images.unsplash.com/photo-1594736797933-d0501ba2fe65?w=600&q=80',
       category: 'Miniaturas'
     },

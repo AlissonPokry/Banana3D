@@ -20,7 +20,7 @@ import { Component, ChangeDetectionStrategy } from '@angular/core';
             </span>
             <p class="text-sm leading-relaxed max-w-xs"
                style="color: rgba(248,249,250,0.5);">
-              Impressão 3D em resina de resolução 8K. Precisão, qualidade e acabamento profissional para seus projetos.
+              Impressão 3D em resina de resolução 9K. Precisão, qualidade e acabamento profissional para seus projetos.
             </p>
           </div>
 
@@ -82,7 +82,7 @@ import { Component, ChangeDetectionStrategy } from '@angular/core';
               &copy; {{ currentYear }} Banana3D. Todos os direitos reservados.
             </p>
             <p class="text-xs" style="color: rgba(248,249,250,0.3);">
-              Impressão 3D em Resina 8K
+              Impressão 3D em Resina 9K
             </p>
           </div>
         </div>

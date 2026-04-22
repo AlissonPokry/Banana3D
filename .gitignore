@@ -42,5 +42,7 @@ testem.log
 Thumbs.db
 
 # AI
+skills-lock.json
+.agents
 prompt.md
 Skills.md
