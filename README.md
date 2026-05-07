@@ -1,6 +1,6 @@
 # 🍌 Banana3D — Landing Page
 
-Landing page moderna e responsiva para a **Banana3D**, uma loja especializada em impressão 3D com resina de resolução 8K.
+Landing page moderna e responsiva para a **Banana3D**, uma loja especializada em impressão 3D com resina de resolução 9K.
 
 ---
 
